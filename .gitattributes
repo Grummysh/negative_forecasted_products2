@@ -20,7 +20,6 @@ def get_top3_negative_forecasted_products(data):
     return top3_categories
 
 # Connect to the Google Sheets document
-gc = gspread.service_account(filename='path_to_your_google_sheets_credentials.json')
 spreadsheet_key = '1IwjamCfqQP6JRzs2hooqVMrd5gm5xQqamD-Z31JJ_8Y'
 worksheet_name = 'Sheet1'
 worksheet = gc.open_by_key(spreadsheet_key).worksheet(worksheet_name)
